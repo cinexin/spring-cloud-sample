@@ -8,7 +8,7 @@ import java.math.BigDecimal
 @Service
 class ExchangeValueServiceImpl: ExchangeValueService {
 
-    override fun retrieveExchangeValue(from: String, to: String): ExchangeValue {
-        return ExchangeValue(1000L, from, to, BigDecimal.valueOf(65))
+    override fun retrieveExchangeValue(from: String, to: String, port: Int): ExchangeValue {
+        return ExchangeValue(1000L, from, to, BigDecimal.valueOf(65), port)
     }
 }

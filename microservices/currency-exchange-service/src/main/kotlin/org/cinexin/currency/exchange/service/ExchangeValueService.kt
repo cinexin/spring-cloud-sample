@@ -4,5 +4,5 @@ import org.cinexin.currency.exchange.domain.ExchangeValue
 
 interface ExchangeValueService {
 
-    fun retrieveExchangeValue(from: String, to: String): ExchangeValue
+    fun retrieveExchangeValue(from: String, to: String, port: Int): ExchangeValue
 }
