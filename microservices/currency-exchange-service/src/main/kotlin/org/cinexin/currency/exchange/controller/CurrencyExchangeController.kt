@@ -15,7 +15,7 @@ class CurrencyExchangeController(private val exchangeValueService: ExchangeValue
 
     @GetMapping("/from/{from}/to/{to}")
     fun retrieveExchangeValue(@PathVariable("from") from: String,
-                              @PathVariable("to") to: String): ExchangeValue {
+                              @PathVariable("to") to: String): ExchangeValue? {
         @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
         return exchangeValueService.retrieveExchangeValue(
                 from,
