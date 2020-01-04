@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.cinexin.AppTest" time="0.036" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.cinexin.AppTest" time="0.044" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13\bin"/>
-    <property name="sun.java.command" value="C:\Users\migui\AppData\Local\Temp\surefire8373132078074100322\surefirebooter14249117360721821316.jar C:\Users\migui\AppData\Local\Temp\surefire8373132078074100322 2020-01-04T12-04-24_433-jvmRun1 surefire1460137925348878450tmp surefire_26141992823244714374tmp"/>
+    <property name="sun.java.command" value="C:\Users\migui\AppData\Local\Temp\surefire10337144321431311675\surefirebooter16250642671749349376.jar C:\Users\migui\AppData\Local\Temp\surefire10337144321431311675 2020-01-04T12-07-48_910-jvmRun1 surefire639106630267038384tmp surefire_212953378530580958366tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\migui\Coding\spring-cloud-sample\microservices\netflix-zuul-api-gateway-server\target\test-classes;C:\Users\migui\Coding\spring-cloud-sample\microservices\netflix-zuul-api-gateway-server\target\classes;C:\Users\migui\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\migui\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.3.61\kotlin-stdlib-jdk8-1.3.61.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.61\kotlin-stdlib-common-1.3.61.jar;C:\Users\migui\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.3.61\kotlin-stdlib-jdk7-1.3.61.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.3.60\kotlin-reflect-1.3.60.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-test\1.3.61\kotlin-test-1.3.61.jar;C:\Users\migui\.m2\repository\org\jetbrains\kotlin\kotlin-test-common\1.3.61\kotlin-test-common-1.3.61.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\migui\AppData\Local\Temp\surefire8373132078074100322\surefirebooter14249117360721821316.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\migui\AppData\Local\Temp\surefire10337144321431311675\surefirebooter16250642671749349376.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13+33"/>
