@@ -25,3 +25,10 @@ hs_err_pid*
 *.iml
 *.idea
 target/
+target
+maven-status/**
+maven-compiler-plugin/**
+maven-archiver/**
+target/**
+**/target/**
+**/**/target/**
