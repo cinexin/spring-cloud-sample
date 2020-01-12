@@ -18,14 +18,24 @@ class CurrencyConversionServiceImpl: CurrencyConversionService {
         )
         val responseEntity = RestTemplate()
                 .getForEntity(currencyExchangeURI, CurrencyConversionBean::class.java, uriVariables)
-        val response = responseEntity.body!!
+        val response = responseEntity.body
 
-        return CurrencyConversionBean(response.id,
+        return response?.let {
+            CurrencyConversionBean(response.id,
+                    from,
+                    to,
+                    response.conversionMultiple,
+                    quantity,
+                    quantity.multiply(response.conversionMultiple),
+                    response.port)
+        } ?: CurrencyConversionBean(
+                0L,
                 from,
                 to,
-                response.conversionMultiple,
+                BigDecimal.ONE,
                 quantity,
-                quantity.multiply(response.conversionMultiple),
-                response.port)
+                quantity,
+                0
+        )
     }
 }
