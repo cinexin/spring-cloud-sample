@@ -2,7 +2,6 @@ package org.cinexin.currency.conversion.controller
 
 import org.cinexin.currency.conversion.domain.CurrencyConversionBean
 import org.cinexin.currency.conversion.domain.CurrencyConversionServiceImplementation
-import org.cinexin.currency.conversion.service.CurrencyConversionService
 import org.cinexin.currency.conversion.service.CurrencyConversionServiceSelector
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
