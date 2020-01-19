@@ -1,17 +1,17 @@
 package org.cinexin.currency.conversion.configuration
 
-import com.netflix.loadbalancer.Server
-import com.netflix.loadbalancer.ServerList
-import org.springframework.cloud.netflix.ribbon.StaticServerList
+import com.netflix.loadbalancer.IRule
+import com.netflix.loadbalancer.RoundRobinRule
+import org.springframework.cloud.netflix.ribbon.RibbonClient
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 
 @Configuration
-open class LocalRibbonClientConfiguration {
+@RibbonClient(name="currency-exchange-service")
+open class LocalRibbonClientConfiguration() {
+
     @Bean
-    open fun ribbonServerList(): ServerList<Server>? { // return new ConfigurationBasedServerList();
-        return StaticServerList<Server>(Server("localhost", 8001),
-                Server("localhost", 8000))
-    }
+    open fun loadBalancingRule(): IRule = RoundRobinRule()
+
 }
