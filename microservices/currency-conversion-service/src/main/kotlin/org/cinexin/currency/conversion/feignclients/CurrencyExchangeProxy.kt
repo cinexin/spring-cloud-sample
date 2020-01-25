@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable
 /**
  * name = "spring.application.name" in "application.properties" of destination service
  */
-@FeignClient(name="currency-exchange-service")
+@FeignClient(name="netflix-zuul-api-gateway-server")
 @RibbonClient(name="currency-exchange-service")
 interface CurrencyExchangeProxy {
 
-    @GetMapping("/currency-exchange/from/{from}/to/{to}")
+    @GetMapping("/currency-exchange-service/currency-exchange/from/{from}/to/{to}")
     fun retrieveExchangeValue(@PathVariable("from") from: String,
                               @PathVariable("to") to: String): ExchangeValue?
 }
