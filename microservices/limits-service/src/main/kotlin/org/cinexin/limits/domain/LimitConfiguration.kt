@@ -5,5 +5,9 @@ data class LimitConfiguration(
 
         var minimum: Int
 ) {
-    constructor(): this(0, 0)
+    constructor() : this(0, 0)
+
+    companion object {
+        fun defaultLimits() = LimitConfiguration(999,9 )
+    }
 }
