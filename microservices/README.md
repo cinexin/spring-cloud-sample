@@ -60,6 +60,7 @@ Additionaly, there's a folder named _postman-endpoints_ where you can find all c
 
 This way you can follow and test the microservices easily
 
+
 #Authors
 
 As said, the main authour of this is Andhra Pradesh of https://courses.in28minutes.com/
@@ -70,6 +71,7 @@ As of the person who adapted and writing this, this is me:
 | Name        | Twitter           | Github  | Email
 | ------------- |:-------------:| -----:| ------:
 | *Miguel Ángel Guillamón*      | cineexin | cinexin | migueguillamon@gmail.com
+
 
 #License
 
