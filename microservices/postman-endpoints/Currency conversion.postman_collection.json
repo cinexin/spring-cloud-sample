@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "8c30d0a1-c0a6-4d54-b9c8-125684afaecf",
+		"name": "Currency conversion",
+		"description": "Currency conversion service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Currency converter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{currency-conversion-base-uri}}/from/USD/to/INR/quantity/1000",
+					"host": [
+						"{{currency-conversion-base-uri}}"
+					],
+					"path": [
+						"from",
+						"USD",
+						"to",
+						"INR",
+						"quantity",
+						"1000"
+					]
+				},
+				"description": "Currency converter endpoint"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "88518e66-6165-488f-9893-266d1a00c422",
+		"name": "Limits",
+		"description": "Limits service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Limits configuration-8080",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{limits-base-uri}}",
+					"host": [
+						"{{limits-base-uri}}"
+					]
+				},
+				"description": "Get Limits configuration (maximum, minimum)"
+			},
+			"response": []
+		},
+		{
+			"name": "Limits actuator refresh-8080",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/actuator/bus-refresh",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"bus-refresh"
+					]
+				},
+				"description": "Get Limits configuration (maximum, minimum)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Limits configuration-8081",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{limits-base-uri}}",
+					"host": [
+						"{{limits-base-uri}}"
+					]
+				},
+				"description": "Get Limits configuration (maximum, minimum)"
+			},
+			"response": []
+		},
+		{
+			"name": "Limits fault tolerance example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{limits-base-uri}}/fault-tolerance-example",
+					"host": [
+						"{{limits-base-uri}}"
+					],
+					"path": [
+						"fault-tolerance-example"
+					]
+				},
+				"description": "Get Limits configuration (maximum, minimum)"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

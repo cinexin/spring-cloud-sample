@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "6a7f0ad4-f262-4f71-bbe2-8cec61078d5c",
+		"name": "Currency exchange",
+		"description": "Currency exchange service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get currency exchange-8000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{currency-exchange-base-uri}}/from/EUR/to/INR",
+					"host": [
+						"{{currency-exchange-base-uri}}"
+					],
+					"path": [
+						"from",
+						"EUR",
+						"to",
+						"INR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get currency exchange-8001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{currency-exchange-base-uri-8001}}/from/EUR/to/INR",
+					"host": [
+						"{{currency-exchange-base-uri-8001}}"
+					],
+					"path": [
+						"from",
+						"EUR",
+						"to",
+						"INR"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

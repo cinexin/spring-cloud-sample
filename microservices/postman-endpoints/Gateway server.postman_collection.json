@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "1aa2dfc5-194b-48fb-9e37-e22f9f815aba",
+		"name": "Gateway server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Currency exchange via Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{gateway-server}}/currency-exchange-service/currency-exchange/from/EUR/to/INR",
+					"host": [
+						"{{gateway-server}}"
+					],
+					"path": [
+						"currency-exchange-service",
+						"currency-exchange",
+						"from",
+						"EUR",
+						"to",
+						"INR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency conversion via Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{gateway-server}}/currency-conversion-service/currency-converter/from/EUR/to/INR/quantity/10000",
+					"host": [
+						"{{gateway-server}}"
+					],
+					"path": [
+						"currency-conversion-service",
+						"currency-converter",
+						"from",
+						"EUR",
+						"to",
+						"INR",
+						"quantity",
+						"10000"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
